@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_10dp"
+            style="@style/main_linearLayoutHorizontal">
+            <TextView
+                style="@style/main_heading"
+                android:text="@string/notify_when_battery_low"/>
+            <Switch
+                android:id="@+id/switchBattery"
+                style="@style/main_switch"/>
+        </LinearLayout>
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/main_divider" />
+        <LinearLayout
+            style="@style/main_linearLayoutHorizontal">
+            <TextView
+                style="@style/main_heading"
+                android:text="@string/notify_while_in_charge_mode"/>
+            <Switch
+                android:id="@+id/switchCharging"
+                style="@style/main_switch"/>
+        </LinearLayout>
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/main_divider" />
+        <LinearLayout
+            style="@style/main_linearLayoutHorizontal">
+            <TextView
+                style="@style/main_heading"
+                android:text="@string/notify_when_network_state_changed"/>
+            <Switch
+                android:id="@+id/switchNetworkState"
+                style="@style/main_switch"/>
+        </LinearLayout>
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/main_divider" />
+        <LinearLayout
+            style="@style/main_linearLayoutHorizontal">
+            <TextView
+                style="@style/main_heading"
+                android:text="@string/notify_on_gps_enabled_disabled"/>
+            <Switch
+                android:id="@+id/switchGPS"
+                style="@style/main_switch"/>
+        </LinearLayout>
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/main_divider" />
+        <LinearLayout
+            style="@style/main_linearLayoutHorizontal">
+            <TextView
+                style="@style/main_heading"
+                android:text="@string/notify_when_device_is_idle"/>
+            <Switch
+                android:id="@+id/switchIdle"
+                style="@style/main_switch"/>
+        </LinearLayout>
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/main_divider" />
+        <LinearLayout
+            style="@style/main_linearLayoutHorizontal">
+            <LinearLayout style="@style/main_alarmLinearLayout">
+                <TextView
+                    android:text="@string/set_alarm_for_some_specific_time"
+                    style="@style/main_alarmHeading" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:id="@+id/etSetAlarm"
+                        android:hint="@string/set_alarm_time"
+                        android:focusable="false"
+                        style="@style/main_alarmEditText"
+                        android:autofillHints="@string/autoHint_setTime"
+                        tools:ignore="TextFields" />
+                    <ImageButton
+                        android:id="@+id/alarmClearButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:src="@drawable/ic_baseline_clear_24"
+                        style="@style/main_alarmEditText"
+                        android:contentDescription="@string/cleartext" />
+                </LinearLayout>
+            </LinearLayout>
+            <Switch
+                android:id="@+id/switchTimeAlarm"
+                style="@style/main_switch"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <com.google.android.material.divider.MaterialDivider
+            style="@style/main_divider" />
+        <LinearLayout
+            style="@style/main_linearLayoutHorizontal">
+            <LinearLayout
+                style="@style/main_alarmLinearLayout">
+                <TextView
+                    style="@style/main_alarmHeading"
+                    android:text="@string/set_alarm_after_certain_period_of_time"/>
+                <EditText
+                    android:id="@+id/etSetDelayTime"
+                    android:hint="@string/enter_delay_time_in_seconds"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    style="@style/main_alarmEditText"
+                    android:autofillHints="@string/autoHint_setDelay" />
+            </LinearLayout>
+            <Switch
+                android:id="@+id/switchDelayAlarm"
+                style="@style/main_switch"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

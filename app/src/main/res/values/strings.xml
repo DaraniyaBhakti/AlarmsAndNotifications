@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">TatvasoftAssignment8</string>
+
+
+    <string name="notify_when_battery_low">Notify when battery low</string>
+    <string name="notify_while_in_charge_mode">Notify while in charge mode</string>
+    <string name="notify_when_network_state_changed">Notify when network state changed</string>
+    <string name="notify_on_gps_enabled_disabled">Notify on GPS enabled/disabled</string>
+    <string name="notify_when_device_is_idle">Notify when device is idle</string>
+
+    <string name="set_alarm_after_certain_period_of_time">Set alarm after certain period of time in seconds</string>
+    <string name="set_alarm_for_some_specific_time">Set alarm for some specific time</string>
+
+    <string name="enter_delay_time_in_seconds">Enter delay time in seconds</string>
+    <string name="set_alarm_time">Set alarm time</string>
+
+    <string name="notification_icon">Notification Icon</string>
+
+    <string name="autoHint_setDelay">set delay</string>
+    <string name="autoHint_setTime">set time</string>
+
+    <string name="toast_setTime">Select time to set alarm</string>
+    <string name="err_delay">Define proper delay</string>
+
+    <string name="notificationChannel">NotificationChannel</string>
+    <string name="notificationDescription">NotificationChannelDescription</string>
+    <string name="alarmEditText">Alarm set at  </string>
+
+    <string name="batteryTitle">Low Battery</string>
+    <string name="batteryShortText">Your device battery is low</string>
+    <string name="batteryLongText">Your device battery is getting low, Please charge it now by plugging charger.</string>
+
+    <string name="chargerConnectedTitle">Device Charging Status</string>
+    <string name="chargerConnectedShortText">Your device is charging</string>
+    <string name="chargerConnectedLongText">Your device battery is charging as charger is plugged-in. Please unplug it whenever battery gets fully charged.</string>
+
+    <string name="chargerDisconnectedTitle">Device Charging Status</string>
+    <string name="chargerDisconnectedShortText">Your device is not charging</string>
+    <string name="chargerDisconnectedLongText">Your device battery is not charging as charger is not plugged-in, Please plug the charger to charge the battery.</string>
+
+    <string name="delayAlarmTitle">Alarm</string>
+    <string name="delayAlarmShortText">Alarm after given delay time</string>
+    <string name="delayAlarmLongText">Alarm notification set by you to notify after certain period of time.</string>
+
+    <string name="gpsEnableTitle">GPS Enabled</string>
+    <string name="gpsEnableShortText">GPS connection is enabled</string>
+    <string name="gpsEnableLongText">GPS connection option is enabled in your device. Now you are able to enjoy the location services.</string>
+
+    <string name="gpsDisableTitle">GPS Disabled</string>
+    <string name="gpsDisableShortText">GPS connection is disabled</string>
+    <string name="gpsDisableLongText">GPS connection option is disabled in your device. To enjoy the location services please enable gps connection.</string>
+
+    <string name="idleTitle">Idle Mode</string>
+    <string name="idleShortText">Your device is not in idle mode</string>
+    <string name="idleLongText">Your device is not in idle mode. And screen is turned-on, as you are doing some operations.</string>
+
+    <string name="notIdleTitle">Idle Mode</string>
+    <string name="notIdleShortText">Your device is in idle mode</string>
+    <string name="notIdleLongText">Your device is in idle mode. And screen is turned-off, as you are not doing any operations.</string>
+
+    <string name="wifiTitle">Wifi-enabled</string>
+    <string name="wifiShortText">Wifi is enabled in device</string>
+    <string name="wifiLongText">Your device is connected to wifi-network connection. Enjoy internet services.</string>
+
+    <string name="mobileTitle">Mobile data enabled</string>
+    <string name="mobileShortText">Mobile data is enabled in device</string>
+    <string name="mobileLongText">Your device is connected to mobile-network connection. Enjoy internet services.</string>
+
+    <string name="notConnectedTitle">Not connected to internet</string>
+    <string name="notConnectedShortText">No active internet connection</string>
+    <string name="notConnectedLongText">Your device is not connected to internet connection. To enjoy internet services please enable wifi or mobile network connection.</string>
+
+    <string name="timeAlarmTitle">Alarm</string>
+    <string name="timeAlarmShortText">Alarm at your given time</string>
+    <string name="timeAlarmLongText">Alarm notification set by you to notify at given alarm time.</string>
+
+    <string name="cleartext">clearText</string>
+</resources>

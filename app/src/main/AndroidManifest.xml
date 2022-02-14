@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tatvasoft.tatvasoftassignment8">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TatvasoftAssignment8">
+
+        <receiver
+            android:name=".BroadcastReceiver.NetworkStateReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name=".BroadcastReceiver.IdleModeReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.os.action.DEVICE_IDLE_MODE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadcastReceiver.TimeAlarmReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name=".BroadcastReceiver.GPSLocationReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name=".BroadcastReceiver.DelayAlarmReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name=".BroadcastReceiver.ChargingReceiver"
+            android:enabled="true" />
+        <receiver
+            android:name=".BroadcastReceiver.BatteryLowReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name=".Services.NetworkStateService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.IdleModeService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.GPSLocationService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.ChargingService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".Services.BatteryLowService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".Activity.NotificationActivity" />
+        <activity android:name=".Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
