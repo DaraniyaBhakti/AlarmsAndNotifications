@@ -18,7 +18,8 @@ public class TimeAlarmReceiver extends BroadcastReceiver {
                 context.getResources().getString(R.string.timeAlarmShortText),
                 context.getResources().getString(R.string.timeAlarmLongText),
                 6,
-                NotificationActivity.class);
+                NotificationActivity.class,
+                6);
 
     }
 }

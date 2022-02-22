@@ -43,6 +43,7 @@ public class NetworkStateReceiver extends BroadcastReceiver {
                 text,
                 longText,
                 3,
-                NotificationActivity.class);
+                NotificationActivity.class,
+                3);
     }
 }

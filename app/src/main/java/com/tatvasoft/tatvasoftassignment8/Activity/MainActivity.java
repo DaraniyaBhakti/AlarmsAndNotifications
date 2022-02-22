@@ -262,7 +262,8 @@ public class MainActivity extends AppCompatActivity {
                                        String text,
                                        String longText,
                                        int id,
-                                       Class activity)
+                                       Class activity,
+                                        int requestCode)
     {
 
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
@@ -279,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Constant.NOTIFICATION_TEXT,text);
         intent.putExtra(Constant.NOTIFICATION_LONG_TEXT,longText);
 
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 1, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, requestCode, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         notificationCompat.setContentIntent(pendingIntent);
         notificationCompat.setAutoCancel(true);
         notificationManagerCompat.notify(id, notificationCompat.build());

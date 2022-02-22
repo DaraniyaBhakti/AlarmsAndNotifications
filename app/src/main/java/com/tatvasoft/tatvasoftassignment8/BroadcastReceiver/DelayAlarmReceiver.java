@@ -18,6 +18,7 @@ public class DelayAlarmReceiver extends BroadcastReceiver {
                 context.getResources().getString(R.string.delayAlarmShortText),
                 context.getResources().getString(R.string.delayAlarmLongText),
                 7,
-                NotificationActivity.class);
+                NotificationActivity.class,
+                7);
     }
 }

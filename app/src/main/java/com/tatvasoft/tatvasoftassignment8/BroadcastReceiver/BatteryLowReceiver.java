@@ -21,7 +21,8 @@ public class BatteryLowReceiver extends BroadcastReceiver {
                     context.getResources().getString(R.string.batteryShortText),
                     context.getResources().getString(R.string.batteryLongText),
                     1,
-                    NotificationActivity.class);
+                    NotificationActivity.class
+                    ,1);
         }
     }
 }

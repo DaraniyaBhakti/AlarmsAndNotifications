@@ -38,6 +38,7 @@ public class IdleModeReceiver extends BroadcastReceiver {
                 text,
                 longText,
                 5,
-                NotificationActivity.class);
+                NotificationActivity.class,
+                5);
     }
 }

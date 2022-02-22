@@ -33,6 +33,7 @@ public class ChargingReceiver extends BroadcastReceiver {
                 text,
                 longText,
                 2,
-                NotificationActivity.class);
+                NotificationActivity.class,
+                2);
     }
 }

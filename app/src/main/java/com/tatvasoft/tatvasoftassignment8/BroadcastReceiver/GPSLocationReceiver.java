@@ -36,6 +36,7 @@ public class GPSLocationReceiver extends BroadcastReceiver {
                 text,
                 longText,
                 4,
-                NotificationActivity.class);
+                NotificationActivity.class,
+                4);
     }
 }
